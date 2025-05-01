@@ -36,12 +36,12 @@ edit_message = true
 
 # Authorize users to spontaneously upload files with messages
 [features.spontaneous_file_upload]
-    enabled = true
+    enabled = false
     # Define accepted file types using MIME types
     # Examples:
     # 1. For specific file types:
     #    accept = ["image/jpeg", "image/png", "application/pdf"]
-    # 2. For all files of certain type:
+    # 2. For all files of certain type:1
     #    accept = ["image/*", "audio/*", "video/*"]
     # 3. For specific file extensions:
     #    accept = { "application/octet-stream" = [".xyz", ".pdb"] }
@@ -68,17 +68,18 @@ edit_message = true
 # Name of the assistant.
 name = "Assistant"
 
-# default_theme = "dark"
+ default_theme = "dark"
 
-# layout = "wide"
+ layout = "wide"
 
-# default_sidebar_state = "open"
+ default_sidebar_state = "open"
 
 # Description of the assistant. This is used for HTML tags.
-# description = ""
+ description = "A Simple ChatBot Application using Ollama."
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
 cot = "full"
+
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
